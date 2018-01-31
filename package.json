@@ -1,0 +1,38 @@
+{
+  "name": "nestjs-backend",
+  "version": "1.0.0",
+  "description": "Getting Started with NestJS",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "prestart:prod": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ptea/nestjs-backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ptea/nestjs-backend/issues"
+  },
+  "homepage": "https://github.com/ptea/nestjs-backend#readme",
+  "dependencies": {
+    "@nestjs/common": "^4.5.9",
+    "@nestjs/core": "^4.5.10",
+    "@nestjs/microservices": "^4.5.8",
+    "@nestjs/testing": "^4.5.5",
+    "@nestjs/websockets": "^4.5.8",
+    "reflect-metadata": "^0.1.12",
+    "rxjs": "^5.5.6"
+  },
+  "devDependencies": {
+    "@types/express": "^4.11.0",
+    "@types/node": "^9.4.0",
+    "nodemon": "^1.14.11",
+    "ts-node": "^4.1.0",
+    "typescript": "^2.7.1"
+  }
+}
