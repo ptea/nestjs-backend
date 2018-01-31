@@ -1,6 +1,12 @@
 GET http://localhost:3000
 
 ###
+GET http://localhost:3000/products
+
+###
+GET http://localhost:3000/products/product1
+
+###
 POST http://localhost:3000/products
 Content-Type: application/json
 
