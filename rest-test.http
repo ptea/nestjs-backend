@@ -2,12 +2,32 @@ GET http://localhost:3000
 
 ###
 GET http://localhost:3000/products
-
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Imxlc3MiLCJpYXQiOjE1MTc3NTA5NjUsImV4cCI6MTUxNzc1NDU2NX0.seXgpIbhxB14zGKqHHd_QEAZW86_p3qAPIrrW9EiBW8
+Content-Type: application/json
 ###
 GET http://localhost:3000/products/product1
-
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Imxlc3MiLCJpYXQiOjE1MTc3NTA5NjUsImV4cCI6MTUxNzc1NDU2NX0.seXgpIbhxB14zGKqHHd_QEAZW86_p3qAPIrrW9EiBW8
+Content-Type: application/json
 ###
 POST http://localhost:3000/products
 Content-Type: application/json
 
 {"id":1,"name":"product1","description":"First Product" }
+###
+POST http://localhost:3000/auth/register
+Content-Type: application/json
+
+{ "username" : "less", "email": "less@outlook.com",  "password": "topsecrete"}
+
+###
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{ "username": "less",  "password": "topsecrete"}
+
+###
+POST http://localhost:3000/products
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Imxlc3MiLCJpYXQiOjE1MTc3NDYxNzMsImV4cCI6MTUxNzc0OTc3M30.kMn_UE_T9twpLIwHzJSC7LecsNSNa_foxa59FeovR5k
+Content-Type: application/json
+
+{"name":"product3", "description": "Third Product"}
