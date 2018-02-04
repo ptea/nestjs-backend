@@ -24,4 +24,8 @@ export class ProductService {
     const result = await this.productRepository.find({ name: name });
     return result[0];
   }
+
+  async createProduct(product: Product): Promise<Product> {
+    return this.productRepository.save(product);
+  }
 }
