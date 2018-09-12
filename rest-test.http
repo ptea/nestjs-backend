@@ -11,3 +11,22 @@ POST http://localhost:3000/products
 Content-Type: application/json
 
 {"id":1,"name":"product1","description":"First Product" }
+###
+
+POST http://localhost:3000/auth/register
+Content-Type: application/json
+
+{ "username" : "less", "email": "less@outlook.com",  "password": "topsecrete"}
+
+###
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{ "username": "less",  "password": "topsecrete"}
+
+###
+POST http://localhost:3000/products
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Imxlc3MiLCJpYXQiOjE1MzY3NTg4MjMsImV4cCI6MTUzNjc2MjQyM30.-8XNEo1knqc3FvTFzrfijl51X2dLNDQuBROKYIxM8-A
+Content-Type: application/json
+
+{"name":"product3", "description": "Third Product"}
